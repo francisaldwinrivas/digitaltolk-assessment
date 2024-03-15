@@ -120,6 +120,11 @@ class BaseRepository
         return $this->model->where($key, $where);
     }
 
+    public function whereIn(string $key, array $values)
+    {
+        return $this->model->whereIn($key, $values);
+    }
+
     /**
      * @param array $data
      * @param null $rules
